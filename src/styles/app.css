@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 400;
+}
+
+.title-semi {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 700;
+}
+
+.title-bold {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 900;
+}
+
+.code {
+	font-family: "JetBrains Mono", monospace;
+}
+
+.content {
+	font-family: "Sofia Sans Variable", sans-serif;
+	font-weight: 400;
+}
+
+.content-bold {
+	font-family: "Sofia Sans Variable", sans-serif;
+	font-weight: 700;
+}
+
+@layer base {
+	html {
+		@apply bg-dark text-light;
+	}
+}
