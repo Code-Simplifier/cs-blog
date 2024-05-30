@@ -7,9 +7,9 @@
 	import LogoIcon from "../icons/LogoIcon.svelte";
 </script>
 
-<nav class="w-full absolute p-5 md:p-10 z-10 mb-0">
+<nav class="w-full absolute p-5 md:p-0 z-10 mb-0">
 	<!-- MD/XL SCREEN NAVBAR -->
-	<div class="hidden md:flex items-center justify-between">
+	<div class="hidden md:flex fixed w-full py-10 px-10 items-center justify-between backdrop-blur-md">
 		<a href="/" class="text-primary">
 			<LogoIcon />
 		</a>
@@ -36,12 +36,6 @@
 				href="#"
 				class="hover:bg-slate-600/50 p-2 rounded-lg transition-all duration-200 hover:text-white"
 			>
-				<NewsIcon />
-			</a>
-			<a
-				href="#"
-				class="hover:bg-slate-600/50 p-2 rounded-lg transition-all duration-200 hover:text-white"
-			>
 				<SettingsIcon />
 			</a>
 		</div>
@@ -52,11 +46,10 @@
 		<div class="text-primary">
 			<LogoIcon />
 		</div>
-		<div class="flex gap-x-16 ">
+		<div class="flex gap-x-10">
 			<SearchIcon />
 			<TagsIcon />
 			<BlogIcon />
-			<NewsIcon />
 			<SettingsIcon />
 		</div>
 	</div>

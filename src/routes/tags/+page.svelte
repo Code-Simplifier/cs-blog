@@ -2,7 +2,6 @@
 	import { tags } from "../../content/tags/tags";
 </script>
 
-
 <svelte:head>
 	<title>Tags</title>
 </svelte:head>
@@ -13,9 +12,13 @@
 		Search by Tags to Find Articles Matching Your Interests.
 	</span>
 	<div class="my-10 w-[10%] rounded-xl bg-slate-800 p-1" />
-	<div class="grid grid-cols-4 gap-3 place-items-center">
+	<div class="grid grid-cols-2 gap-3 md:grid-cols-4">
 		{#each tags as tag}
-			<div class={`code px-2 w-fit rounded-xl font-bold ${tag.bgColor} ${tag.fgColor}`}>#{tag.title}</div>
+			<div
+				class={`code rounded-xl p-2 text-center text-lg hover:scale-110 duration-200 transition-all ${tag.bgColor} ${tag.fgColor}`}
+			>
+				#{tag.title}
+			</div>
 		{/each}
 	</div>
 </section>

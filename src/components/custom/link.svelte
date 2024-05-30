@@ -4,5 +4,5 @@
 </script>
 
 <a href={url}>
-	<span class="content-bold italic text-primary underline">{title}</span>
+	<span class="content-bold italic text-primary underline mr-1">{title}</span>
 </a>

@@ -7,11 +7,11 @@ export default {
 		"text-slate-100",
 		{
 			pattern:
-				/bg-(red|green|blue|orange|yellow|purple|slate)-(100|200|300|400|500|600|700|800|900)/
+				/bg-(red|rose|green|lime|emerald|blue|indigo|cyan|teal|sky|orange|yellow|amber|purple|violet|slate)-(100|200|300|400|500|600|700|800|900)/
 		},
 		{
 			pattern:
-				/bg-gradient-to-r from-(red|green|blue|orange|yellow|purple|slate)-(100|200|300|400|500|600|700|800|900) to-(red|green|blue|orange|yellow|purple|slate)-(100|200|300|400|500|600|700|800|900)/
+				/bg-gradient-to-r from-(red|rose|green|lime|emerald|blue|indigo|cyan|teal|sky|orange|yellow|amber|purple|violet|slate)-(100|200|300|400|500|600|700|800|900)  via-(red|rose|green|lime|emerald|blue|indigo|cyan|teal|sky|orange|yellow|amber|purple|violet|slate)-(100|200|300|400|500|600|700|800|900)/
 		}
 	],
 	theme: {

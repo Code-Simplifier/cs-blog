@@ -36,7 +36,7 @@
 						<div class="absolute bottom-3 flex gap-x-2">
 							{#each article.tags as tag}
 								<div class={`code rounded-xl px-2 ${tag.bgColor} ${tag.fgColor}`}>
-									<strong>#{tag.title}</strong>
+									#{tag.title}
 								</div>
 							{/each}
 						</div>

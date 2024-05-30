@@ -33,6 +33,10 @@
 
 @layer base {
 	html {
-		@apply bg-dark text-light;
+		@apply scroll-smooth bg-dark text-light;
+	}
+
+	.prose :is(ul) {
+		@apply my-5 ml-10 flex list-disc flex-col space-y-3;
 	}
 }
