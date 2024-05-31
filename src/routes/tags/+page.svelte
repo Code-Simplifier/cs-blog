@@ -14,11 +14,12 @@
 	<div class="my-10 w-[10%] rounded-xl bg-slate-800 p-1" />
 	<div class="grid grid-cols-2 gap-3 md:grid-cols-4">
 		{#each tags as tag}
-			<div
-				class={`code rounded-xl p-2 text-center text-lg hover:scale-110 duration-200 transition-all ${tag.bgColor} ${tag.fgColor}`}
+			<a
+				href="/tags/{tag.title}"
+				class={`code rounded-xl p-2 text-center text-lg transition-all duration-200 hover:scale-110 ${tag.bgColor} ${tag.fgColor}`}
 			>
 				#{tag.title}
-			</div>
+			</a>
 		{/each}
 	</div>
 </section>

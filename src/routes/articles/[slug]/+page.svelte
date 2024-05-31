@@ -21,7 +21,7 @@
 	</span>
 	<div class="flex gap-x-2">
 		{#each data.metadata.tags as tag}
-			<div class={`code rounded-xl px-2 ${tag.bgColor} ${tag.fgColor}`}>#{tag.title}</div>
+			<a href="/tags/{tag.title}" class={`code rounded-xl px-2 ${tag.bgColor} ${tag.fgColor}`}>#{tag.title}</a>
 		{/each}
 	</div>
 	<div class="my-10 w-[5%] rounded-2xl bg-slate-700 p-1" />
