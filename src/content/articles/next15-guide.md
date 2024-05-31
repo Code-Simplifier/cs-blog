@@ -22,11 +22,11 @@ tags:
 </script>
 
 <TopButton />
-<img src="/src/lib/images/next15.png" class="rounded-2xl border-2 border-light" />
+<img src="/src/lib/images/next15-guide/thumbnail.png" class="rounded-2xl border-2 border-light" alt="thumbnail" />
 
 <Headings title="Exploring the New Features of Next.js 15" />
 
-Here is a quick summary of all new confirmed features in release candidate version before the stable release:
+Here is all that you will find in this article as we await the GA of Next.js 15:
 
 - Support for the <Link title="React 19" url="#react19RC" /> RC.
 - <CodeSpan title="fetch" /> requests, <CodeSpan title="GET" /> route handlers and <Link url="#caching" title="Caching" />.
@@ -149,8 +149,8 @@ By default, Next.js employs static rendering unless dynamic functionalities like
 
 Here is a <Link url="https://www.partialprerendering.com/" title="demo" /> of Partial Prerendering in action:
 <div class="flex justify-center my-10">
-  <img src="/src/lib/images/next15-guide/rendering.png" class="rounded-2xl border-2 border-light" />
-  <img src="/src/lib/images/next15-guide/rendered.png" class="rounded-2xl border-2 border-light" />
+  <img src="/src/lib/images/next15-guide/rendering.png" class="rounded-2xl border-2 border-light" alt="rendering" />
+  <img src="/src/lib/images/next15-guide/rendered.png" class="rounded-2xl border-2 border-light" alt="rendered" />
 </div>
 
 Next.js will provide an <CodeSpan title="experimental_ppr" />route config option to use PPR in Layouts & Pages.

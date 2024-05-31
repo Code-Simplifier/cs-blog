@@ -10,7 +10,7 @@ async function getArticles() {
 		const file = paths[path];
 		const slug = path.split("/").at(-1)?.replace(".md", "");
 
-		if (file && typeof file == "object" && "metadata" in file && slug) {
+		if (file && typeof file === "object" && "metadata" in file && slug) {
 			const metadata = file.metadata as Omit<Article, "slug">;
 			const article = { ...metadata, slug } satisfies Article;
 

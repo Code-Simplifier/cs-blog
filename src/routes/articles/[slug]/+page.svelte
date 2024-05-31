@@ -10,8 +10,11 @@
 </svelte:head>
 
 <article class="flex flex-col items-center overflow-x-hidden rounded-2xl pt-32">
-	<span class="title-bold mb-2 mt-10 text-center text-5xl px-2 uppercase">{data.metadata.title}</span>
-	<span class="content-bold mb-2 text-xl text-slate-500">
+	<span class="code font-semibold mt-10 mb-5 uppercase tracking-wider text-lg text-slate-700">[{" "}{data.metadata.category}{" "}]</span>
+	<span class="title-bold mb-2 mx-2 text-center text-lg md:text-5xl uppercase"
+		>{data.metadata.title}</span
+	>
+	<span class="content-bold mb-2 md:text-xl text-slate-500">
 		Updated On <span class="italic">
 			{formatDate(data.metadata.date)}
 		</span>
@@ -22,7 +25,7 @@
 		{/each}
 	</div>
 	<div class="my-10 w-[5%] rounded-2xl bg-slate-700 p-1" />
-	<div class="prose text-xl text-justify mt-20 w-[90%]">
+	<div class="prose mt-20 w-[80%] overflow-x-hidden text-justify text-lg md:text-xl">
 		<svelte:component this={data.content} />
 	</div>
 </article>

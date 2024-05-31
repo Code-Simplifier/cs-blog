@@ -17,13 +17,16 @@
 	}
 </script>
 
-<button on:click={scrollToTop} style="display: {showButton ? 'block' : 'none'};">
+<button
+	on:click={scrollToTop}
+	style="display: {showButton ? 'block' : 'none'};"
+	class="hidden md:fixed"
+>
 	<ArrowUp />
 </button>
 
 <style>
 	button {
-		position: fixed;
 		bottom: 20px;
 		right: 20px;
 		padding: 10px;
@@ -35,6 +38,6 @@
 	}
 
 	button:hover {
-		background-color: #0056b3;
+		background-color: #4db1b0;
 	}
 </style>
