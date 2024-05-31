@@ -15,7 +15,7 @@
 		</a>
 		<div class="flex gap-x-16">
 			<a
-				href="#"
+				href="/search"
 				class="hover:bg-slate-600/50 p-2 rounded-lg transition-all duration-200 hover:text-white"
 			>
 				<SearchIcon />
@@ -47,7 +47,7 @@
 			<LogoIcon />
 		</div>
 		<div class="flex gap-x-14">
-			<a href="/">
+			<a href="/search">
 				<SearchIcon />
 			</a>
 			<a href="/tags">
