@@ -23,7 +23,8 @@ tags:
 </script>
 
 <TopButton />
-<img src="/src/lib/images/svelte-mdsvex/thumbnail.png" class="rounded-2xl border-2 border-light" alt="thumbnail" />
+
+![image](/images/svelte-mdsvex/thumbnail.png)
 
 <Headings title="working with markdown files in Svelte" />
 

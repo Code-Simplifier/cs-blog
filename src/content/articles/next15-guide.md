@@ -22,7 +22,8 @@ tags:
 </script>
 
 <TopButton />
-<img src="/src/lib/images/next15-guide/thumbnail.png" class="rounded-2xl border-2 border-light" alt="thumbnail" />
+
+![image](/images/next15-guide/thumbnail.png)
 
 <Headings title="Exploring the New Features of Next.js 15" />
 
@@ -148,9 +149,12 @@ By default, Next.js employs static rendering unless dynamic functionalities like
 <br/><br/>
 
 Here is a <Link url="https://www.partialprerendering.com/" title="demo" /> of Partial Prerendering in action:
-<div class="flex justify-center my-10">
-  <img src="/src/lib/images/next15-guide/rendering.png" class="rounded-2xl border-2 border-light" alt="rendering" />
-  <img src="/src/lib/images/next15-guide/rendered.png" class="rounded-2xl border-2 border-light" alt="rendered" />
+<div class="flex justify-center space-x-3 my-10">
+
+  ![image](/images/next15-guide/rendering.png)
+
+  ![image](/images/next15-guide/rendered.png)
+
 </div>
 
 Next.js will provide an <CodeSpan title="experimental_ppr" />route config option to use PPR in Layouts & Pages.
@@ -226,7 +230,11 @@ export default function Layout({ children }) {
 <Headings title="compile with turbopack in next.js" />
 Next.js 15 now comes with a new facelift, with a revamped and modernized default App UI that boasts a fresh and visually appealing appearance.
 
-<img src="/src/lib/images/next15-guide/next-ui.avif" alt="next-ui" class="my-10 border border-light rounded-2xl" />
+<div class="my-10">
+
+![image](/images/next15-guide/next-ui.avif)
+
+</div>
 
 <Link title="Turbopack" url="https://turbo.build/" /> stands as an incremental bundler tailored for JavaScript and TypeScript, crafted in Rust by the innovative minds behind webpack and Next.js at <Link title="Vercel" url="https://vercel.com" />.
 <br /><br />

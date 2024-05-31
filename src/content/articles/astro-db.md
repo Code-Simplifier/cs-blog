@@ -28,7 +28,8 @@ tags:
 </script>
 
 <TopButton />
-<img class="rounded-2xl border-2 border-light" src="/src/lib/images/astro-db/thumbnail.png" alt="thumbnail" />
+
+![thumbnail](/images/astro-db/thumbnail.png)
 
 <Headings title="Astro now has its own database" />
 
@@ -99,7 +100,12 @@ And with <Link id="pricing" title="Turso" url="https://turso.tech/" /> hosting t
 
 Astro offers a generous free tier for its database alongside a pay-to-as-go technique for its paid tier.
 
-<img src="/src/lib/images/astro-db/pricing.png" alt="pricing" class="rounded-2xl my-10" />
+
+<div class="my-10">
+
+![pricing](/images/astro-db/pricing.png)
+
+</div>
 
 <Headings title="getting started with astrodb"  id="astrodb" />
 
