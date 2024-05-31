@@ -23,7 +23,7 @@ tags:
 </script>
 
 <TopButton />
-<img src="/src/lib/images/svelte-mdsvex/thumbnail.png" class="rounded-2xl border-2 border-light" />
+<img src="/src/lib/images/svelte-mdsvex/thumbnail.png" class="rounded-2xl border-2 border-light" alt="thumbnail" />
 
 <Headings title="working with markdown files in Svelte" />
 
@@ -37,7 +37,7 @@ This article is a basic overview of using markdown in Svelte. Here is what you w
 - <Link url="#summary" title="Summary" /> of the article.
 
 <Headings title="Installing Dependencies" />
-To follow along this article, you will need to install and create a svelte app.
+To follow along this article, you will need to install and create a Svelte app.
 
 ```shell
 npm create svelte@latest svelte-mdsvex

@@ -17,12 +17,12 @@
 		<p class="title-bold tracking-wide hover:text-primary transition-all duration-200 cursor-pointer uppercase">
 			articles
 		</p>
-		<p class="title-bold tracking-wide hover:text-primary transition-all duration-200 cursor-pointer uppercase">
+		<!-- <p class="title-bold tracking-wide hover:text-primary transition-all duration-200 cursor-pointer uppercase">
 			news
 		</p>
 		<p class="title-bold tracking-wide hover:text-primary transition-all duration-200 cursor-pointer uppercase">
 			settings
-		</p>
+		</p> -->
 	</div>
 	<div class="text-primary my-6">
 		<LogoIcon width="400" height="400" />

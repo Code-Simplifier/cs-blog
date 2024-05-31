@@ -7,8 +7,8 @@
 </svelte:head>
 
 <section class="flex flex-col items-center pt-44">
-	<h1 class="title-bold my-2 text-6xl">Articles</h1>
-	<span class="content text-2xl text-slate-500 text-center">
+	<h1 class="title-bold my-2 text-2xl md:text-6xl">Articles</h1>
+	<span class="content text-lg md:text-2xl text-slate-500 text-center px-5">
 		Explore insightful articles on coding best practices to elevate your skills.
 	</span>
 	<div class="my-10 w-[10%] rounded-xl bg-slate-800 p-1" />

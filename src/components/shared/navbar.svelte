@@ -32,12 +32,12 @@
 			>
 				<BlogIcon />
 			</a>
-			<a
+			<!-- <a
 				href="#"
 				class="hover:bg-slate-600/50 p-2 rounded-lg transition-all duration-200 hover:text-white"
 			>
 				<SettingsIcon />
-			</a>
+			</a> -->
 		</div>
 	</div>
 
@@ -46,11 +46,16 @@
 		<div class="text-primary">
 			<LogoIcon />
 		</div>
-		<div class="flex gap-x-10">
-			<SearchIcon />
-			<TagsIcon />
-			<BlogIcon />
-			<SettingsIcon />
+		<div class="flex gap-x-14">
+			<a href="/">
+				<SearchIcon />
+			</a>
+			<a href="/tags">
+				<TagsIcon />
+			</a>
+			<a href="/articles">
+				<BlogIcon />
+			</a>
 		</div>
 	</div>
 </nav>

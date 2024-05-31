@@ -12,7 +12,7 @@
 	import "@fontsource/jetbrains-mono";
 </script>
 
-<main>
+<main class="overflow-x-hidden">
 	<Navbar />
 	<div class="content">
 		<slot />
