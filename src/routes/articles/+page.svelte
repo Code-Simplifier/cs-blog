@@ -3,23 +3,23 @@
 </script>
 
 <svelte:head>
-	<title>Articles</title>
+	<title>CS - Articles</title>
 </svelte:head>
 
 <section class="flex flex-col items-center pt-44">
 	<h1 class="title-bold my-2 text-2xl md:text-6xl">Articles</h1>
-	<span class="content text-lg md:text-2xl text-slate-500 text-center px-5">
+	<span class="content px-5 text-center text-lg text-slate-500 md:text-2xl">
 		Explore insightful articles on coding best practices to elevate your skills.
 	</span>
 	<div class="my-10 w-[10%] rounded-xl bg-slate-800 p-1" />
-	<div class="grid grid-cols-1 md:grid-cols-3 place-items-center gap-3">
+	<div class="grid grid-cols-1 place-items-center gap-3 md:grid-cols-3">
 		{#each data.articles as article}
 			<a href={`/articles/${article.slug}`} target="_blank">
 				<div
-					class="relative h-[400px] w-[350px] rounded-2xl bg-secondary duration-200 hover:mx-5 hover:my-3 hover:scale-105 hover:border-2 hover:border-primary"
+					class="relative h-[400px] w-[350px] rounded-2xl bg-secondary duration-200 hover:mx-5 hover:my-3 hover:scale-105 hover:border-2 hover:border-slate-500"
 				>
 					<div
-						class="code flex items-center justify-between p-3 font-bold uppercase text-slate-700"
+						class="code flex items-center justify-between p-3 font-bold uppercase text-slate-500"
 					>
 						<span>category</span>
 						<span class="transition-all duration-200 hover:text-primary hover:underline"

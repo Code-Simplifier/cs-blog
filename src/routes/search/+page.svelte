@@ -19,15 +19,19 @@
 	}
 </script>
 
+<svelte:head>
+	<title>CS - Search</title>
+</svelte:head>
+
 {#if search === "ready"}
-	<seciton class="flex flex-col items-center justify-center pt-44">
+	<seciton class="h-screen flex flex-col items-center justify-center">
 		<input
 			bind:value={searchItem}
 			type="search"
 			autocomplete="off"
 			spellcheck="false"
-			placeholder="Search..."
-			class="w-[90%] rounded-xl border-2 border-slate-800 bg-secondary p-3 text-xl text-primary placeholder-slate-500 focus:outline-none md:w-[60%]"
+			placeholder="Search by title, category, or tag..."
+			class="w-[90%] rounded-xl title-semi border-2 border-slate-500 bg-secondary p-3 text-xl text-primary placeholder-slate-500 focus:outline-none md:w-[60%]"
 		/>
 
 		<div class="mt-10 grid grid-cols-1 place-items-center gap-3 md:grid-cols-3">

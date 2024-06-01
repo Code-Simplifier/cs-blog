@@ -24,10 +24,7 @@
 			settings
 		</p> -->
 	</div>
-	<div class="text-primary my-6">
-		<LogoIcon width="400" height="400" />
-	</div>
-	<div class="text-lg uppercase flex mb-5 mx-10 items-center text-center">
+	<div class="text-lg uppercase my-10 flex mb-5 mx-10 items-center text-center">
 		&copy
 		<p class="tracking-widest code mx-2"> 2024 CodeSimplified. all rights reserved.</p>
 	</div>

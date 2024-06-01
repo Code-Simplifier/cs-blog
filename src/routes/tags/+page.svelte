@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Tags</title>
+	<title>CS - Tags</title>
 </svelte:head>
 
 <section class="flex flex-col items-center justify-center pt-44">

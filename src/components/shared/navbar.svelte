@@ -32,12 +32,6 @@
 			>
 				<BlogIcon />
 			</a>
-			<!-- <a
-				href="#"
-				class="hover:bg-slate-600/50 p-2 rounded-lg transition-all duration-200 hover:text-white"
-			>
-				<SettingsIcon />
-			</a> -->
 		</div>
 	</div>
 
