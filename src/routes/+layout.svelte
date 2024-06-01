@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import "../styles/app.css";
 	import "../styles/highlight.css";
 
@@ -12,6 +12,7 @@
 	import "@fontsource/fira-sans/900.css";
 	import "@fontsource-variable/sofia-sans";
 	import "@fontsource/jetbrains-mono";
+
 </script>
 
 <main class="overflow-x-hidden">

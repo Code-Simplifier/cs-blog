@@ -3,6 +3,7 @@
 	import TagsIcon from "../icons/TagsIcon.svelte";
 	import BlogIcon from "../icons/BlogIcon.svelte";
 	import LogoIcon from "../icons/LogoIcon.svelte";
+	import CommandIcon from "../icons/CommandIcon.svelte";
 </script>
 
 <nav class="w-full absolute p-5 md:p-0 z-10 mb-0">
@@ -30,6 +31,12 @@
 			>
 				<BlogIcon />
 			</a>
+			<a
+				href="/commands"
+				class="hover:bg-slate-600/50 p-2 rounded-lg transition-all duration-200 hover:text-white"
+			>
+				<CommandIcon />
+			</a>
 		</div>
 	</div>
 
@@ -47,6 +54,9 @@
 			</a>
 			<a href="/articles">
 				<BlogIcon />
+			</a>
+			<a href="/commands">
+				<CommandIcon />
 			</a>
 		</div>
 	</div>
