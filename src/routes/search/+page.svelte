@@ -38,10 +38,10 @@
 			{#each results as article}
 				<a href={`/articles/${article.slug}`} target="_blank">
 					<div
-						class="relative h-[400px] w-[350px] rounded-2xl bg-secondary duration-200 hover:mx-5 hover:my-3 hover:scale-105 hover:border-2 hover:border-primary"
+						class="relative h-[400px] w-[350px] rounded-2xl bg-secondary duration-200 hover:mx-5 hover:my-3 hover:scale-105 hover:border-2 hover:border-slate-500"
 					>
 						<div
-							class="code flex items-center justify-between p-3 font-bold uppercase text-slate-700"
+							class="code flex items-center justify-between p-3 font-bold uppercase text-slate-500"
 						>
 							<span>category</span>
 							<span class="transition-all duration-200 hover:text-primary hover:underline"

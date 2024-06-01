@@ -2,6 +2,7 @@
 title: Use Markdown in Svelte with mdsvex
 desc: Guide on how to setup mdsvex in SvelteKit 3.0 to use .md/.svx for your blog.
 date: "2024-5-30"
+thumbnail: "/images/svelte-mdsvex/thumbnail.png"
 category: tutorial
 published: true
 tags:

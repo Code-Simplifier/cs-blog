@@ -13,28 +13,21 @@
 	</span>
 	<div class="my-10 w-[10%] rounded-xl bg-slate-800 p-1" />
 	<div class="grid grid-cols-1 place-items-center gap-3 md:grid-cols-3">
-		{#each data.articles as article}
-			<a href={`/articles/${article.slug}`} target="_blank">
+		{#each data.articles as { title, slug, desc, tags, thumbnail }}
+			<a href={`/articles/${slug}`} target="_blank">
 				<div
-					class="relative h-[400px] w-[350px] rounded-2xl bg-secondary duration-200 hover:mx-5 hover:my-3 hover:scale-105 hover:border-2 hover:border-slate-500"
+					class="relative h-[450px] w-[350px] rounded-2xl bg-secondary duration-200 hover:mx-5 hover:my-3 hover:scale-105 hover:border-2 hover:border-slate-500"
 				>
-					<div
-						class="code flex items-center justify-between p-3 font-bold uppercase text-slate-500"
-					>
-						<span>category</span>
-						<span class="transition-all duration-200 hover:text-primary hover:underline"
-							>{article.category}</span
-						>
-					</div>
+					<img src={thumbnail} alt={title} class="rounded-t-2xl" />
 					<div class="flex w-[90%] flex-col justify-between p-4">
 						<div class="flex flex-col gap-y-3">
 							<h1 class="title-semi text-2xl uppercase tracking-wide text-primary">
-								{article.title}
+								{title}
 							</h1>
-							<span>{article.desc}</span>
+							<span>{desc}</span>
 						</div>
 						<div class="absolute bottom-3 flex gap-x-2">
-							{#each article.tags as tag}
+							{#each tags as tag}
 								<div class={`code rounded-xl px-2 ${tag.bgColor} ${tag.fgColor}`}>
 									#{tag.title}
 								</div>

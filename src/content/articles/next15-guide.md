@@ -2,6 +2,7 @@
 title: Next15 is here & its faster than ever!
 desc: A deep dive into all the new features alongside a new compiler.
 date: "2024-5-29"
+thumbnail: "/images/next15-guide/thumbnail.png"
 category: guide
 published: true
 tags:
@@ -36,7 +37,6 @@ Here is all that you will find in this article as we await the GA of Next.js 15:
 - Enable <Link title="Turbopack" url="#turbopack" /> in local development.
 - New <Link title="config options" url="#new-config" /> for App/Pages Router.
 - <Link title="Summary" url="#summary" /> of the article.
-
 
 <Headings title="How to try Next.js 15 RC?" />
 <div id="react19RC">
@@ -149,11 +149,12 @@ By default, Next.js employs static rendering unless dynamic functionalities like
 <br/><br/>
 
 Here is a <Link url="https://www.partialprerendering.com/" title="demo" /> of Partial Prerendering in action:
+
 <div class="flex justify-center space-x-3 my-10">
 
-  ![image](/images/next15-guide/rendering.png)
+![image](/images/next15-guide/rendering.png)
 
-  ![image](/images/next15-guide/rendered.png)
+![image](/images/next15-guide/rendered.png)
 
 </div>
 
@@ -162,9 +163,9 @@ Next.js will provide an <CodeSpan title="experimental_ppr" />route config option
 ```tsx
 import { Suspense } from "react"
 import { StaticComponent, DynamicComponent } from "@/app/ui"
- 
+
 export const experimental_ppr = true
- 
+
 export default function Page() {
   return {
      <>
@@ -181,13 +182,14 @@ To use the new option, you’ll need to set the <CodeSpan title="experimental.pp
 
 ```ts
 const nextConfig = {
-  experimental: {
-    ppr: 'incremental',
-  },
+	experimental: {
+		ppr: "incremental"
+	}
 };
- 
+
 module.exports = nextConfig;
 ```
+
 <Warning id="next-after">This feature is currently in an experimental stage, and there may be significant changes before the stable release.</Warning>
 
 <Headings title="Post-Response Code Execution with Next/After" />
@@ -201,11 +203,11 @@ To use <CodeSpan title="next.after" />, add <CodeSpan title="experimental.after"
 
 ```js
 const nextConfig = {
-  experimental: {
-    after: true,
-  },
+	experimental: {
+		after: true
+	}
 };
- 
+
 module.exports = nextConfig;
 ```
 
@@ -214,17 +216,18 @@ Then, import the function in Server Components, Server Actions, Route Handlers, 
 ```ts
 import { unstable_after as after } from 'next/server';
 import { log } from '@/app/utils';
- 
+
 export default function Layout({ children }) {
   // Secondary task
   after(() => {
     log();
   });
- 
+
   // Primary task
   return <>{children}</>;
 }
 ```
+
 <Warning id="turbopack">This feature is currently in an experimental stage, and there may be significant changes before the stable release.</Warning>
 
 <Headings title="compile with turbopack in next.js" />
@@ -247,6 +250,7 @@ When using <CodeSpan title="create-next-app" />, a new prompt will appear, givin
 ```
 
 The new <CodeSpan id="new-config" title="--turbo" /> flag can also be used to enable <CodeSpan title="Turbopack" />
+
 ```shell
 npx create-next-app@rc --turbo
 ```
@@ -260,12 +264,12 @@ To standardize configuration across both the App and Pages Router, a new option 
 
 ```ts
 const nextConfig = {
-  // Automatically bundle external packages in the Pages Router:
-  bundlePagesRouterDependencies: true,
-  // Opt specific packages out of bundling for both App and Pages Router:
-  serverExternalPackages: ['package-name'],
+	// Automatically bundle external packages in the Pages Router:
+	bundlePagesRouterDependencies: true,
+	// Opt specific packages out of bundling for both App and Pages Router:
+	serverExternalPackages: ["package-name"]
 };
- 
+
 module.exports = nextConfig;
 ```
 

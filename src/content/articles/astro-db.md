@@ -2,6 +2,7 @@
 title: AstroDB is super easy to setup!
 desc: Learn the ways of Astro's libSQL based database along with Astro Studio.
 date: "2024-5-31"
+thumbnail: "/images/astro-db/thumbnail.png"
 category: overview
 published: true
 tags:
