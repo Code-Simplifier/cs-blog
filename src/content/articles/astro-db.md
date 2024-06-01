@@ -30,8 +30,6 @@ tags:
 
 <TopButton />
 
-![thumbnail](/images/astro-db/thumbnail.png)
-
 <Headings title="Astro now has its own database" />
 
 Few months back, Astro launched its own database based on <Link title="Turso" url="https://turso.tech/" />. Here is all that you need to know to get going:
@@ -101,7 +99,6 @@ And with <Link id="pricing" title="Turso" url="https://turso.tech/" /> hosting t
 
 Astro offers a generous free tier for its database alongside a pay-to-as-go technique for its paid tier.
 
-
 <div class="my-10">
 
 ![pricing](/images/astro-db/pricing.png)
@@ -149,32 +146,32 @@ To add a table into <CodeSpan title="astro:db" />, we need to define it using <C
 
 ```ts
 export default defineDb({
-  tables: { Comment },
-})
+	tables: { Comment }
+});
 ```
 
 Now we need to seed our tables inside the <CodeSpan title="seed.ts" /> file.
 
 ```ts
-import { db, Article } from 'astro:db';
+import { db, Article } from "astro:db";
 
-export default async function() {
-  await db.insert(Article).values([
-    { id: 1, title: 'This is a good title!' },
-    { id: 2, title: 'AstroDB is super cool!'},
-  ])
+export default async function () {
+	await db.insert(Article).values([
+		{ id: 1, title: "This is a good title!" },
+		{ id: 2, title: "AstroDB is super cool!" }
+	]);
 }
 ```
 
 <Error>
 
-In many cases, you likely to find that the table you have created is not recognized when you import it inside __seed.ts__ from <CodeSpan title="astro:db" />. This is likely a _Typescript_ error and can be solved by either adding a _//@ts-ignore_ on top of the file or tweaking the strictness inside __ts.config.json__.
+In many cases, you likely to find that the table you have created is not recognized when you import it inside **seed.ts** from <CodeSpan title="astro:db" />. This is likely a _Typescript_ error and can be solved by either adding a _//@ts-ignore_ on top of the file or tweaking the strictness inside **ts.config.json**.
 
 </Error>
 
 <Headings title="Query your database" />
 
-AstroDB has a built-in <Link title="Drizzle ORM" url="https://orm.drizzle.team/" /> client. It uses your exact database schema definition for __type-safe SQL__ queries with __TypeScript__ errors when you reference a column or table that doesn’t exist.
+AstroDB has a built-in <Link title="Drizzle ORM" url="https://orm.drizzle.team/" /> client. It uses your exact database schema definition for **type-safe SQL** queries with **TypeScript** errors when you reference a column or table that doesn’t exist.
 <br />
 
 To use the <CodeSpan title="SELECT" /> query, go inside your <CodeSpan title="src/pages/index.astro" /> file and import your tables in the _frontmatter_.
@@ -187,22 +184,22 @@ const articles = await db.select().from(Article);
 ---
 ```
 
-Next up, we can use logic blocks to query and render all items of the the __Article__ table.
+Next up, we can use logic blocks to query and render all items of the the **Article** table.
 
 ```jsx
 {
-  articles.map(({ id, title }) => (
-    <article>
-      <p>Id: {id}</p>
-      <p>Title: {title}</p>
-    </article>
-  ))
+	articles.map(({ id, title }) => (
+		<article>
+			<p>Id: {id}</p>
+			<p>Title: {title}</p>
+		</article>
+	));
 }
 ```
 
 <Success id="summary">
 
-Oh yeah, its just that simple! All you need are __two__ files to create and insert values into you database and its ready to be used. _AstroDB_ has to tbe easiest to setup __SQL-based__ database by a mile. To learn more about methods of querying, you can visit the official <Link title="documentation" url="https://docs.astro.build/en/guides/astro-db/" /> here.
+Oh yeah, its just that simple! All you need are **two** files to create and insert values into you database and its ready to be used. _AstroDB_ has to tbe easiest to setup **SQL-based** database by a mile. To learn more about methods of querying, you can visit the official <Link title="documentation" url="https://docs.astro.build/en/guides/astro-db/" /> here.
 
 </Success>
 

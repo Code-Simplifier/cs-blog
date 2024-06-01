@@ -14,7 +14,7 @@
 	<div class="my-10 w-[10%] rounded-xl bg-slate-800 p-1" />
 	<div class="grid grid-cols-1 place-items-center gap-3 md:grid-cols-3">
 		{#each data.articles as { title, slug, desc, tags, thumbnail }}
-			<a href={`/articles/${slug}`} target="_blank">
+			<a href={`/articles/${slug}`}>
 				<div
 					class="relative h-[450px] w-[350px] rounded-2xl bg-secondary duration-200 hover:mx-5 hover:my-3 hover:scale-105 hover:border-2 hover:border-slate-500"
 				>
@@ -39,3 +39,12 @@
 		{/each}
 	</div>
 </section>
+
+<style>
+	img {
+		view-timeline-name: --var(image);
+	}
+	h1 {
+		view-timeline-name: --var(title);
+	}
+</style>

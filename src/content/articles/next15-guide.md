@@ -24,8 +24,6 @@ tags:
 
 <TopButton />
 
-![image](/images/next15-guide/thumbnail.png)
-
 <Headings title="Exploring the New Features of Next.js 15" />
 
 Here is all that you will find in this article as we await the GA of Next.js 15:

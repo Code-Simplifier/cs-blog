@@ -5,6 +5,8 @@
 	import Footer from "../components/shared/footer.svelte";
 	import Navbar from "../components/shared/navbar.svelte";
 
+	import ViewTransition from "../components/animation/navigation.svelte";
+
 	import "@fontsource/fira-sans/400.css";
 	import "@fontsource/fira-sans/700.css";
 	import "@fontsource/fira-sans/900.css";
@@ -13,6 +15,8 @@
 </script>
 
 <main class="overflow-x-hidden">
+	<ViewTransition />
+
 	<Navbar />
 	<div class="content">
 		<slot />

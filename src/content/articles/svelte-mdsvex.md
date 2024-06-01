@@ -25,8 +25,6 @@ tags:
 
 <TopButton />
 
-![image](/images/svelte-mdsvex/thumbnail.png)
-
 <Headings title="working with markdown files in Svelte" />
 
 This article is a basic overview of using markdown in Svelte. Here is what you will learn:

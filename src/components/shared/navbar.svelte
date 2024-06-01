@@ -2,8 +2,6 @@
 	import SearchIcon from "../icons/SearchIcon.svelte";
 	import TagsIcon from "../icons/TagsIcon.svelte";
 	import BlogIcon from "../icons/BlogIcon.svelte";
-	import NewsIcon from "../icons/NewsIcon.svelte";
-	import SettingsIcon from "../icons/SettingsIcon.svelte";
 	import LogoIcon from "../icons/LogoIcon.svelte";
 </script>
 
